@@ -113,37 +113,6 @@ footer {
     padding: 10px;
     text-align: center;
 }
-/* Estilos para el carrusel */
-.carousel-item img {
-    height: 400px; /* Ajusta la altura de las imágenes del carrusel según tus necesidades */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de los controles */
-    border-radius: 50%; /* Estilo de borde redondeado para los controles */
-    padding: 15px; /* Espaciado interno de los controles */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: auto; /* Ancho automático para adaptarse al contenido del ícono */
-}
-
-.carousel-control-prev {
-    left: -40px; /* Posición a la izquierda */
-}
-
-.carousel-control-next {
-    right: -40px; /* Posición a la derecha */
-}
-
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
-    color: white; /* Color del ícono de navegación */
-    font-size: 30px; /* Tamaño del ícono */
-}
-
 /* Media queries */
 @media only screen and (max-width: 960px) {
     header h1 {
