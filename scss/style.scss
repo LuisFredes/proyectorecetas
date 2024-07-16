@@ -39,19 +39,7 @@ header {
         font-size: 2.5rem;
         margin-left: 10px;
         animation-duration: 3s;
-        animation-name: titulos;
         animation-iteration-count: infinite;
-    }
-    @keyframes titulos {
-       0%{
-        opacity: 0.5;
-       } 
-       50%{
-        opacity: 1;
-       }
-       100%{
-        opacity: 0.5;
-       }
     }
 }
 
@@ -100,6 +88,8 @@ main {
     h2 {
         font-size: 2rem;
         margin-bottom: 10px;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 
     h3 {
@@ -109,7 +99,9 @@ main {
         padding: 20px;
         border: 2px solid black;
         border-radius: 15rem;
-    }
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
 
     p {
         line-height: 1.6;
@@ -126,6 +118,8 @@ main {
     h4 {
         text-decoration: underline;
         font-size: 1.5rem;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -134,7 +128,7 @@ footer {
     grid-area: footer;
     background: linear-gradient(rgba(215, 164, 98, 0.728),rgba(156, 90, 3, 0.728),rgba(215, 164, 98, 0.728));
     color: black;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
