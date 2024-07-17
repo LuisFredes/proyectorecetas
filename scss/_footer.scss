@@ -1,0 +1,14 @@
+// Reset y configuración global
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// Estilos para el pie de página
+footer {
+    grid-area: footer;
+    background: linear-gradient(rgba(215, 164, 98, 0.728),rgba(156, 90, 3, 0.728),rgba(215, 164, 98, 0.728));
+    color: black;
+    padding: 10px;
+    text-align: center;
+}

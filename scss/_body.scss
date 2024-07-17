@@ -1,0 +1,19 @@
+// Reset y configuración global
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Configuración de Grid
+body {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-image: url(../imagenes/general/fondo.jpg);
+}

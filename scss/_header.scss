@@ -1,0 +1,65 @@
+// Reset y configuración global
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// Estilos para el encabezado
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(215, 164, 98, 0.728),rgba(156, 90, 3, 0.728),rgba(215, 164, 98, 0.728));
+    color: black;
+    padding: 5px;
+
+    .imglogo {
+        height: 120px;
+        transition: all 2s;
+        &:hover {
+          transform: scale(1.1);
+        }  
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 10px;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+}
+
+// Estilos para la navegación
+.navegacion {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    li {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .receta-link {
+        padding: 10px 20px;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgba(183, 145, 95, 0.258);
+        transition: all 2s;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
