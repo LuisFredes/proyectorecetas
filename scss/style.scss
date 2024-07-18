@@ -2,41 +2,49 @@
 @import "header";
 @import "main";
 @import "footer";
-
-// Media queries
+/* Media Queries */
 @media only screen and (max-width: 960px) {
-    header {
-        h1 {
-            font-size: 2rem;
-        }
+    header h1 {
+      font-size: 2rem;
     }
-
-    .receta-link {
-        font-size: 1rem;
-        padding: 8px 16px;
+    
+    .navegacion .receta-link {
+      font-size: 1rem;
+      padding: 8px 16px;
     }
-
-    .carousel-item img {
-        height: 300px; // Ajustar tamaño de imágenes para dispositivos más pequeños
+    
+    main h2 {
+      font-size: 1.5rem;
     }
-}
-
-@media only screen and (max-width: 500px) {
+  
+    main h3 {
+      font-size: 1.2rem;
+    }
+  
+    main h4 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
     body {
-        background-color: blue;
+      background-color: blue;
     }
-}
-
-@media only screen and (min-width: 501px) and (max-width: 960px) {
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 501px) and (max-width: 960px) {
     body {
-        background-color: red;
+      background-color: red;
     }
-}
-
-@media only screen and (min-width: 961px) {
+  }
+  
+  @media only screen and (min-width: 961px) {
     body {
-        background-color: orange;
+      background-color: orange;
     }
-}
-
+  }
     
