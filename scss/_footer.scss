@@ -1,14 +1,33 @@
-// Reset y configuración global
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-// Estilos para el pie de página
-footer {
-    grid-area: footer;
+// _footer.scss
+
+.footer {
     background: linear-gradient(rgba(215, 164, 98, 0.728),rgba(156, 90, 3, 0.728),rgba(215, 164, 98, 0.728));
-    color: black;
-    padding: 10px;
-    text-align: center;
+    color:black;
+    padding: $footer-padding;
+
+    a {
+        color: $footer-link-color;
+        text-decoration: none;
+        &:hover {
+            color: $footer-link-hover-color;
+            text-decoration: underline;
+        }
+    }
+
+    h4 {
+        font-weight: bold;
+    }
+
+    .container {
+        .row {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .text-md-end {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
 }

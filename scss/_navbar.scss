@@ -1,0 +1,34 @@
+// _navbar.scss
+
+nav {
+    .navbar {
+        background-color: $navbar-bg-color;
+        padding: $navbar-padding;
+
+        .navbar-brand {
+            color: $navbar-text-color;
+            &:hover {
+                color: darken($navbar-text-color, 10%);
+            }
+        }
+
+        .navbar-toggler {
+            border-color: $navbar-text-color;
+            .navbar-toggler-icon {
+                background-image: url('data:image/svg+xml,...'); // Custom icon if needed
+            }
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-link {
+                    color: $navbar-text-color;
+                    padding: $navbar-item-padding;
+                    &:hover {
+                        color: $navbar-link-hover-color;
+                    }
+                }
+            }
+        }
+    }
+}

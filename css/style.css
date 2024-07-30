@@ -13,10 +13,28 @@ body {
   background-image: url(../imagenes/general/fondo.jpg);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+nav .navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+nav .navbar .navbar-brand {
+  color: #333333;
+}
+nav .navbar .navbar-brand:hover {
+  color: #1a1a1a;
+}
+nav .navbar .navbar-toggler {
+  border-color: #333333;
+}
+nav .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+}
+nav .navbar .navbar-collapse .navbar-nav .nav-link {
+  color: #333333;
+  padding: 10px;
+}
+nav .navbar .navbar-collapse .navbar-nav .nav-link:hover {
+  color: #007bff;
 }
 
 header {
@@ -27,6 +45,8 @@ header {
   background: linear-gradient(rgba(215, 164, 98, 0.728), rgba(156, 90, 3, 0.728), rgba(215, 164, 98, 0.728));
   color: black;
   padding: 5px;
+  background-color: #f8f9fa;
+  text-align: center;
 }
 header .imglogo {
   height: 120px;
@@ -36,46 +56,11 @@ header .imglogo:hover {
   transform: scale(1.1);
 }
 header h1 {
+  margin-top: 10px;
   font-size: 2.5rem;
   margin-left: 10px;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-}
-
-.navegacion {
-  position: sticky;
-  top: 0;
-  padding: 20px;
-}
-.navegacion ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-.navegacion li {
-  margin: 0 10px;
-  padding: 10px;
-}
-.navegacion .receta-link {
-  padding: 10px 20px;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: rgba(183, 145, 95, 0.258);
-  transition: all 2s;
-}
-.navegacion .receta-link:hover {
-  background-color: black;
-  color: white;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 main {
@@ -117,56 +102,67 @@ main h4 {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+main .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+main .image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  main .image-container {
+    justify-content: center;
+  }
+  main .image-container img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  main .image-container {
+    justify-content: space-between;
+  }
+  main .image-container img {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  main .image-container {
+    justify-content: space-between;
+  }
+  main .image-container img {
+    max-width: 300px;
+  }
 }
 
-footer {
-  grid-area: footer;
+.footer {
   background: linear-gradient(rgba(215, 164, 98, 0.728), rgba(156, 90, 3, 0.728), rgba(215, 164, 98, 0.728));
   color: black;
-  padding: 10px;
-  text-align: center;
+  padding: 20px;
 }
-
-/* Media Queries */
-@media only screen and (max-width: 960px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  .navegacion .receta-link {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-  main h2 {
-    font-size: 1.5rem;
-  }
-  main h3 {
-    font-size: 1.2rem;
-  }
-  main h4 {
-    font-size: 1.2rem;
-  }
+.footer a {
+  color: #007bff;
+  text-decoration: none;
 }
-@media only screen and (max-width: 500px) {
-  body {
-    background-color: blue;
-  }
-  header h1 {
-    font-size: 1.5rem;
-  }
+.footer a:hover {
+  color: #0062cc;
+  text-decoration: underline;
 }
-@media only screen and (min-width: 501px) and (max-width: 960px) {
-  body {
-    background-color: red;
-  }
+.footer h4 {
+  font-weight: bold;
 }
-@media only screen and (min-width: 961px) {
-  body {
-    background-color: orange;
+.footer .container .row {
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .footer .text-md-end {
+    text-align: center;
+    margin-top: 10px;
   }
 }
 

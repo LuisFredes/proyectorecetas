@@ -1,0 +1,14 @@
+// _variables.scss
+$main-font: 'Roboto Slab', serif;
+// Colors
+$footer-bg-color: #f8f9fa;
+$footer-text-color: #6c757d;
+$footer-link-color: #007bff;
+$footer-link-hover-color: darken($footer-link-color, 10%);
+$navbar-bg-color: #ffffff;
+$navbar-text-color: #333333;
+$navbar-link-hover-color: #007bff;
+// Spacing
+$footer-padding: 20px;
+$navbar-padding: 10px 20px;
+$navbar-item-padding: 10px;
